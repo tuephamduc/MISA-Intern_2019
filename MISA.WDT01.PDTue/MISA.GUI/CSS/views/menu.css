@@ -1,0 +1,178 @@
+﻿/*
+    Xử lí phần menu cho tất cả các trang
+    Người tạo: PDTue 21/08/2019
+*/
+
+.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 230px;
+    background-color: #0973b9;
+    color: #fff;
+}
+
+    .menu .menu-logo {
+        width: 100%;
+        height: 54px;
+        display:flex;
+        align-items:center;
+    }
+
+    .menu .menu-logo-left {
+        width: 24px;
+        height: 24px;
+        background-image: url('/Contents/Icons/iconMenu.png');
+        background-repeat: no-repeat;
+        background-position: -2px -416px;
+        margin-left: 16px;
+    }
+    .menu .menu-logo-right {
+        background-image: url('/Contents/images/logo-cukcuk.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 10px;
+        height: 24px;
+        width: 166px;
+    }
+
+
+    .menu .menu-box {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #0973b9;
+        overflow: auto;
+    }
+
+        .menu .menu-box::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .menu .menu-box .item {
+            width: 100%;
+            height: 38px;
+            color: #fff;
+            align-items: center;
+            display: flex;
+            border-bottom: 1px solid #016087;
+            border-top: 1px solid #038ac1;
+        }
+
+            .menu .menu-box .item:hover {
+                cursor: pointer;
+                background-color: #00577b;
+            }
+
+    .menu .menu-item-selected {
+        background-color: #00577b;
+    }
+
+    .menu .menu-box .item-logo {
+        width: 24px;
+        height: 24px;
+        margin: 0 3px;
+        background-image: url('/Contents/icons/slibarmenu.png');
+        background-repeat: no-repeat;
+        margin-left:16px;
+    }
+    /*icon báo cáo*/
+    .menu .menu-box .item-logo-report {
+        background-position: 0px -279px;
+    }
+    /*icon mua hàng*/
+    .menu .menu-box .item-logo-purchares {
+        background-position: 0px -39px;
+    }
+    /*icon kho*/
+    .menu .menu-box .item-logo-stock {
+        background-image: url('/Contents/icons/iconMenu.png');
+        background-position: 0px -39px;
+        background-repeat: no-repeat;
+    }
+    /*icon quĩ tiền mặt*/
+    .menu .menu-box .item-logo-cash-money {
+        background-image: url('/Contents/icons/iconMenu.png');
+        background-position: 0px -75px;
+        background-repeat: no-repeat;
+    }
+    /*icon quĩ tiền gửi*/
+    .menu .menu-box .item-logo-cash {
+        background-image: url('/Contents/icons/icon-deposit.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /*icon chi phí*/
+    .menu .menu-box .item-logo-payment-receipt {
+        background-image: url('/Contents/icons/icon-cost.png');
+        background-position: center;
+    }
+    /*icon khuyến mại*/
+    .menu .menu-box .item-logo-promotion {
+        background-position: 0px -198px;
+    }
+    /*icon thực đơn*/
+    .menu .menu-box .item-logo-menu {
+        background-image: url('/Contents/icons/vector-smart-object.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /*icon danh mục*/
+    .menu .menu-box .item-logo-dictionary {
+        background-position: 0px -238px;
+    }
+    /*icon hủy hóa đơn*/
+    .menu .menu-box .item-logo-cancel-receipt {
+        background: url('/Contents/icons/cancel-invoice.png') center;
+        background-repeat: no-repeat;
+    }
+    /*icon SMS Marketing*/
+    .menu .menu-box .item-logo-sms {
+        background-image: url('/Contents/icons/sms_menu.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /*icon đối tác giao hàng*/
+    .menu .menu-box .item-logo-delevery-partner {
+        background-image: url('/Contents/icons/ic_GH.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /*icon hóa đơn điện tử*/
+    .menu .menu-box .item-logo-meinvoice {
+        background-image: url('/Contents/icons/ic_hoadon.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /*icon thiết lập hệ thống*/
+    .menu .menu-box .item-logo-setting {
+        background-position: 0px -319px;
+    }
+    /*icon trợ giúp*/
+    .menu .menu-box .item-logo-help {
+        background-position: 0px -388px;
+    }
+    /*icon thuê bao*/
+    .menu .menu-box .item-logo-subscriber {
+        background-image: url('/Contents/icons/icon-subscriber.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /*icon 5Food*/
+    .menu .menu-box .item-logo-5food {
+        background-image: url('/Contents/icons/5food.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .menu .menu-box .item-logo-dropdown {
+        background-image: url('/Contents/icons/iconMenu.png');
+        background-position: -2px -271px;
+        position: absolute;
+        right: 8px;
+    }
+    .menu .item-text{
+        margin-left:8px;
+    }

@@ -1,0 +1,359 @@
+﻿/*
+    Xử lí phần content gồm bảng dữ liệu và filter
+    Người tạo: PDTue 21/08/2019
+*/
+.content {
+    position: absolute;
+    top: 100px;
+    left: 230px;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: #fff;
+    border:solid 1px #d0d0d0;
+}
+
+    .content .content-master {
+        position: absolute;
+        top: 0px;
+        left: 4px;
+        right: 0px;
+        bottom: 8px;
+        /*min-width: 708px;*/
+        /*min-height: 557px;*/
+    }
+    /*Xử lí phần toolbar*/
+    .content .master-toolbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #e1e1e1;
+        height: 27px;
+        display: flex;
+        color: #fff;
+        align-items: center;
+    }
+
+        .content .master-toolbar .toolbar-button {
+            height: 27px;
+            display: flex;
+            align-items: center;
+        }
+
+            .content .master-toolbar .toolbar-button:hover {
+                cursor: pointer;
+                background-color: #0077ff;
+            }
+
+
+
+        .content .master-toolbar .toolbar-line {
+            height: 30px;
+            width: 1px;
+            background-color: #1a7194;
+        }
+
+        .content .master-toolbar .toolbar-button-text {
+            color: #000000;
+            padding-right:4px;
+        }
+
+        .content .master-toolbar .toolbar-button-icon {
+            width: 16px;
+            height: 16px;
+            background-image: url('/Contents/icons/IconSprite.png');
+            background-repeat: no-repeat;
+            margin: 0 4px;
+        }
+
+        .content .master-toolbar .button-icon-add {
+            background-position: 0px -2416px;
+        }
+
+        .content .master-toolbar .button-icon-duplicate {
+            background-position: 0px -1887px;
+        }
+
+        .content .master-toolbar .button-icon-edit {
+            background-image: url('/Contents/icons/Edit16.png');
+            background-position: center;
+        }
+
+        .content .master-toolbar .button-icon-delete {
+            background-position: 0px -2000px;
+        }
+
+        .content .master-toolbar .button-icon-reload {
+            background-position: 0px -2240px;
+        }
+
+        .content .master-toolbar .button-icon-nhap-khau {
+            background-image: url('/Contents/icons/Import16.png');
+            background-position: center;
+        }
+
+        .content .master-toolbar .button-icon-xuat-khau {
+            background-image: url('/Contents/icons/excel_97_24.png');
+            background-position: center;
+        }
+
+        .content .master-toolbar .button-icon-gopKH {
+            background-image: url('/Contents/icons/ic_GopKhachHang.png');
+            background-position: center;
+        }
+
+        .content .master-toolbar .button-icon-help {
+            background-position: 0px -1600px;
+        }
+
+    /*Xử lí phần bảng dữ liệu*/
+    .content .master-detail {
+        position: absolute;
+        top: 27px;
+        left: 0;
+        right: 0;
+        bottom: 26px;
+        min-height: 273px;
+        background-color: #fff;
+    }
+
+        .content .master-detail .master-detail-table {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            overflow: auto;
+            min-height: 273px;
+        }
+
+    .content .master-detail-table table {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .content .master-detail-table tbody tr:nth-child(2n) {
+        background-color: #fafafa;
+    }
+
+    .content .master-detail-table tbody tr:hover {
+        background-color: #0b98ed;
+        cursor: default;
+    }
+
+    .content .master-detail-table th {
+        border: solid 1px #bebcbc;
+        height: 55px;
+        padding: 0;
+        background-color: #f2f2f2;
+        font-weight: normal;
+    }
+
+    .content .master-detail-table td {
+        border: solid 1px #bebcbc;
+        height: 24px;
+        padding: 0 10px;
+    }
+
+    .content .master-detail-table .head-text {
+        min-width: 130px;
+        height: 50%;
+        line-height: 30px;
+    }
+
+    .content .master-detail-table .head-box {
+        /*position: relative;
+        height: 50%;*/
+        display: flex;
+        border-top: 1px solid #bebcbc;
+        background-color: #fff;
+        align-items: center;
+    }
+
+    .content .master-detail-table .head-select {
+        height:22px;
+        width: 27px;
+        line-height: 24px;
+        border: 1px solid #bebcbc;
+        background-color: #fff;
+    }
+
+        .content .master-detail-table .head-select:hover {
+            cursor: pointer;
+        }
+
+    .content .master-detail-table .head-input {
+        /*border: solid 1px #bebcbc;*/
+        padding: 0;
+        width: calc(100%-24px);
+        height: 22px;
+    }
+
+    .content .master-detail-table .head-detail {
+        border: none;
+        padding: 0;
+        width: 95%;
+        font-weight: normal;
+        background-color: #fff;
+    }
+
+    .content .master-detail-table tbody .row-selected {
+        background-color: #d7e9f4 !important;
+    }
+
+.toolbar-button-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+tbody{
+
+}
+thead tr{
+   
+}
+/*Xử lí phần footer của trang*/
+.box-loadData {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba(190, 188, 188, 0.5);
+}
+    .box-loadData .box-loading {
+        width: 150px;
+        height: 76px;
+        background-color: #fff;
+        background-image: url('/Contents/images/fast_image.gif');
+        background-repeat: no-repeat;
+        background-size:40px;
+        background-position: top;
+        line-height: 120px;
+        font-weight: bolder;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+    }
+.content .master-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 26px;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    border-top: solid 1px #e1e1e1;
+}
+
+.master-footer .master-footer-control {
+    display: flex;
+    position: absolute;
+    left: 5px;
+    height: 26px;
+    align-items: center;
+}
+
+.master-footer .control-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    .master-footer .control-icon:hover {
+        background-color: #4b4c4c;
+    }
+
+.master-footer .first-page {
+    background-image: url('/Contents/icons/page-first.png');
+}
+
+.master-footer .last-page {
+    background-image: url('/Contents/icons/page-last.png');
+}
+
+.master-footer .next-page {
+    background-image: url('/Contents/icons/page-next.png');
+}
+
+.master-footer .prev-page {
+    background-image: url('/Contents/icons/page-prev.png');
+}
+
+.master-footer .refresh-page {
+    background-image: url('/Contents/icons/refresh.png');
+}
+
+.master-footer .number-page {
+    width: 38px;
+    height: 22px;
+    border: 1px solid #d0d0d0;
+    line-height: 22px;
+    border-radius: 3px;
+    margin: auto 8px;
+    text-align: center;
+    color: #4b4c4c;
+}
+
+.master-footer .result-amount {
+    display: flex;
+    width: 44px;
+    height: 24px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    text-align: center;
+    align-items: center;
+}
+
+.master-footer select {
+    width: 44px;
+    height: 24px;
+    padding-left: 4px;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.master-footer .select-down-page {
+    position: absolute;
+    right: -4px;
+    top: 6px;
+}
+
+.master-footer .master-footer-result {
+    position: absolute;
+    right: 20px;
+    color: #4b4c4c;
+}
+
+/* check uncheck*/
+.check {
+    width: 13px;
+    height: 13px;
+    background-image: url('/Contents/icons/check.png');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.uncheck {
+    width: 13px;
+    height: 13px;
+    background-image: url('/Contents/icons/uncheck.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hidden {
+    visibility: hidden;
+}

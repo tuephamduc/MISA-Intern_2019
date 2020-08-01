@@ -1,0 +1,209 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Tahoma;
+}
+/*
+    Xử lí phần header
+    Người tạo: PDTue 22/08/2019
+*/
+.header {
+    position: absolute;
+    left: 230px;
+    top: 0;
+    right: 0;
+    height: 100px;
+}
+
+    .header .header-top {
+        position: absolute;
+        top: 0;
+        height: 55px;
+        background-color: #0973b9;
+        right: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .header .header-bottom {
+        position: absolute;
+        top: 55px;
+        height: 45px;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+
+
+/*Xử lí phần header top*/
+.header-top .select {
+    position: absolute;
+    height: 32px;
+    background-color: #00577b;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+
+.header-top .selectRestaurant {
+    width: 200px;
+    left: 20px;
+}
+
+.header-top .selectLanguage {
+    width: 170px;
+    right:293px;
+}
+
+.header .select:hover {
+    cursor: pointer;
+}
+
+
+.header-top .select-detail {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    font-size: small;
+    margin-left:5px;
+}
+
+.header .user-box {
+    position: absolute;
+    /*width: 170px;*/
+    height: 30px;
+    display: flex;
+    align-items: center;
+    right:10px;
+    border-radius:3px;
+    color:white;
+}
+
+    .header .user-box:hover {
+        cursor: pointer;
+    }
+
+    .header .user-avatar {
+        width: 28px;
+        height: 28px;
+        background-image: url('/Contents/icons/Image.jpg');
+        background-repeat: no-repeat;
+        background-size:28px;
+        background-position:center;
+        margin-right: 5px;
+        border-radius:50%;
+    }
+    .header .user-name{
+        display:flex;
+        align-items:center;
+        height:30px;
+        width:auto;
+        margin-right:8px;
+    }
+
+.select-down {
+    width: 26px;
+    height: 22px;
+    background-image: url('/Contents/icons/arrow-down-line.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    /*margin-right: 4px;*/
+}
+
+    .select-down:hover {
+        cursor: pointer;
+    }
+.header-top .header-icon-global {
+    width: 30px;
+    height: 27px;
+    right: 260px;
+    position: absolute;
+    background-image: url('/Contents/icons/global.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header .notice {
+    position: absolute;
+    width: 65px;
+    height: 55px;
+    background-image: url('/Contents/icons/ic_support.svg');
+    background-repeat: no-repeat;
+    right: 190px;
+}
+/*Xử lí phần header-bottom*/
+.header-bottom .header-name {
+    margin-left: 15px;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: bold;
+}
+.header-bottom .arrow {
+    background-image: url('/Contents/icons/arrow-right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8px;
+    width: 10px;
+    height: 50px;
+    margin-left:10px;
+}
+
+.header-bottom .header-bottom-box {
+    position: absolute;
+    top: 0;
+    left: 256px;
+    bottom: 0;
+    display: flex;
+    overflow: auto;
+    right: 0px;
+}
+
+    .header-bottom .header-bottom-box .header-bottom-button {
+        height: 28px;
+        bottom: 10px;
+        border: 1px solid #808080;
+        border-radius: 3px;
+        margin-right: 10px;
+        top: 10px;
+    }
+
+        .header-bottom .header-bottom-box .header-bottom-button:hover {
+            cursor: pointer;
+            background-color: #00ffff;
+        }
+
+    .header-bottom .header-bottom-box .button1 {
+        position: absolute;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        right: 10px;
+        margin-left: 15px;
+    }
+
+    .header-bottom .header-bottom-box .report-icon {
+        width: 16px;
+        height: 16px;
+        background-image: url('/Contents/icons/viewEmail.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 8px;
+    }
+
+    .header-bottom .header-bottom-box .header-bottom-text {
+        margin-left: 14px;
+        color: black;
+    }
+
+    .header-bottom .header-bottom-box .button2 {
+        position: absolute;
+        display: flex;
+        width: 170px;
+        align-items: center;
+        right: 130px;
+    }

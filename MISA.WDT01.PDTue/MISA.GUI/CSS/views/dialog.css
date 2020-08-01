@@ -1,0 +1,230 @@
+﻿.box-hidden {
+    display: none;
+}
+
+.dialog-content {
+    padding: 0px 0 0 0px;
+    width: 620px;
+    height: 285px;
+    margin-bottom:0px;
+}
+
+
+    .dialog-content .infor-box {
+        align-items: center;
+        width: 659px;
+        height: 22px;
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+.infor-box .box-label {
+    height: 15px;
+    left: auto;
+    align-items: center;
+    width: 132px;
+    padding: 3px 2px 3px 0;
+}
+
+.infor-box .box-panel {
+    width: 190px;
+    height: 22px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.box-panel .box-input {
+    position: relative;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+    padding: 2px 3px;
+    width: 100%;
+    height: 16px;
+    display: flex;
+}
+
+input, textarea {
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: smaller;
+}
+
+    input, textarea:focus {
+        outline: none;
+    }
+
+.box-panel .box-input-warning {
+    border: 1px solid #ff0000;
+}
+
+.box-panel .box-danger {
+    width: 22px;
+    height: 22px;
+    background-image: url('/Contents/Icons/exclamation.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto 4px;
+}
+
+
+
+
+
+.box-input .box-icon-calendar {
+    background-image: url('/Contents/Icons/common-icon.png');
+    background-repeat: no-repeat;
+    background-position: 0px -175px;
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+}
+
+.infor-box .box-panel-address {
+    width: 513px;
+    height: 19px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    padding: 2px 2px;
+    margin-top: 5px;
+}
+
+
+
+
+
+.box-panel-note {
+    width: 509px;
+    height: 40px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    padding: 4px 4px;
+}
+
+
+.dialog-footer {
+    height: 25px;
+    /*padding: 6px 3px;*/
+    display: flex;
+}
+
+.footer-button {
+    height: 18px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    background-color: #e9e9e9;
+    border: solid 1px #d0d0d0;
+}
+
+    .footer-button:hover {
+        background-color: #0094ff;
+        cursor: pointer;
+    }
+
+    .footer-button .footer-button-icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 9px;
+        margin-left: 9px;
+    }
+
+    .footer-button .footer-button-text {
+        color: #000000;
+        font-weight: 100;
+        font-size: small;
+        align-items: center;
+    }
+
+.footer-button-help {
+    position: absolute;
+    width: 86px;
+    height: 25px;
+    left: 15px;
+}
+
+.footer-button .button-icon-help {
+    background-image: url('/Contents/icons/IconSprite.png');
+    background-position: 0px -1600px;
+}
+
+.footer-button-save {
+    position: absolute;
+    width: 86px;
+    height: 25px;
+    right: 240px;
+    margin-right: 15px;
+}
+
+.footer-button .button-icon-save {
+    background-image: url('/Contents/icons/Save16.png');
+}
+
+.footer-button-saveadd {
+    position: absolute;
+    width: 125px;
+    height: 25px;
+    right: 106px;
+    margin-right: 10px;
+}
+
+.footer-button .button-icon-saveadd {
+    background-image: url('/Contents/icons/SaveAdd16.png');
+}
+
+.footer-button-cancel {
+    position: absolute;
+    width: 86px;
+    height: 25px;
+    right: 10px;
+}
+
+.footer-button .button-icon-cancel {
+    background-image: url('/Contents/icons/Disable16.png');
+}
+
+/*Xử lí phần dialog xóa khách hàng*/
+
+.dialog-delete-content {
+    padding: 0px 0 0 0px;
+    height:50%;
+    width:100%;
+    display:flex;
+}
+    .dialog-delete-content .dialog-delete-icon {
+        width: 50px;
+        height: 32px;
+        background-image: url('/Contents/icons/icon-question.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .dialog-delete-content .question-text {
+        width:calc(100%-40px);
+        font-size: small;
+        margin-left:10px;
+    }
+.dialog-delete-footer {
+    height: 50%;
+    width: 100%;
+    float: right;
+}
+    .dialog-delete-footer .dialog-delete-button {
+        width: 73px;
+        height: 22px;
+        border: 1px solid #d0d0d0;
+        background-color: #e9e9e9;
+        color: #000;
+        margin-left: 4px;
+        margin-top: 14px;
+        line-height: 22px;
+        text-align: center;
+        float: right;
+    }
+        .dialog-delete-footer .dialog-delete-button:hover{
+            cursor:pointer;
+        }
+
